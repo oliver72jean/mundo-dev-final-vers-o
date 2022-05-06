@@ -1,0 +1,99 @@
+{% extends "base_pub.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev | DJango </title>
+{% endblock title %} 
+{% block div1 %}
+<div class="p-4 p-md-5 mb-4 mt-4 text-black rounded capa" style="background: url({% static 'img/pub10.jpg' %});">
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25 "><strong>
+      O que é Django, para que serve e como usar este framework? <br>
+      Essas e outras perguntas serão respondidas dentro desta publicação que está recheada de novidades.
+    </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1%} 
+
+{% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">DJango</h2>
+  <p class="blog-post-meta">
+    Janeiro 30, 2022 by <a href="#">Alessandro</a>
+  </p>
+
+  <p style="text-align: justify;">
+      A vida de um profissional de programação não é fácil, isso todo mundo sabe.
+      <br><br>
+      Apesar de toda gratificação que sentimos ao ver uma aplicação desenvolvida funcionando perfeitamente,
+       muitas vezes problemas pequenos atravancam o avanço de um projeto, trazendo muitos transtornos não só para o profissional responsável,
+        mas para toda a equipe.
+        <br><br>
+        O que algumas pessoas talvez não saibam é que existem hoje, no mercado, diversas ferramentas voltadas à otimização de processos,
+         como frameworks e bibliotecas.
+         <br>
+         No conteúdo de hoje, falaremos mais sobre o framework Django, para que serve, como funciona e como utilizá-lo.
+
+         <p style="text-align: justify;">
+             <h3 style="text-align: justify;">O que é DJango</h3>
+             O Django é um framework web full stack open source (código aberto) baseado em Python, gratuito e de alto nível.
+             <br>
+             Este framework foi criado com o objetivo de resolver todos os problemas mais comuns do processo de desenvolvimento de aplicações web,
+              como por exemplo autenticação, rotas, object relational mapper (ORM) e até migrations.
+              <br>
+              Além disso, ele ainda suporta projetos escaláveis e conta com um eficiente sistema de segurança.
+              <p style="text-align: justify;">
+                  <h3 style="text-align: justify;">Como Surgiu o DJango</h3>
+                  O Django foi criado em 2005 no estado do Kansas, nos EUA.
+                  <br>
+                  Ele foi desenvolvido pelos programadores Adrian Holovaty e Simon Willison que, na época, 
+                  trabalhavam em um jornal local e precisavam criar uma solução que permitisse que o site deste jornal pudesse ser atualizado com mais frequência,
+                   mais rapidamente e sem enrolação.
+                   <br>
+                   nclusive, é exatamente o que motivou a sua criação que sustenta seu slogan: “Um framework para perfeccionistas que possuem prazos.“
+
+                  Seu nome foi dado em homenagem ao guitarrista de jazz Django Reinhardt.
+                  <p style="text-align: justify;">
+                      <h3 style="text-align: justify;">Como funciona o Django?</h3>
+                      O Django fornece aos seus programadores e programadoras uma construção de sites rápida e com o uso de pouco código.
+
+                         <br><br> De modo geral, um projeto desenvolvido com o Django costuma ser dividido em pequenas aplicações compostas por um pacote Python que, por sua vez, 
+                         resolve porções específicas de requisições relativas àquela aplicação.
+                         <br><br>
+
+                      Cada uma destas pequenas aplicações baseia-se no modelo MVT — ou Model-View-Template, os três aspectos de uma aplicação web trabalhados pelo Django. <br><br>
+                      <p style="text-align: justify;">
+                         <strong>Model: </strong>o modelo é a estrutura que representa os dados dessa aplicação, ou seja, possui ligação direta com um banco de dados. Esta é a camada de abstração feita para manipular, incluir ou excluir dados. Sempre que um model é criado, o Django fornece uma API para esta manipulação. <br><br>
+                          <p style="text-align: justify;">
+                             <strong>View:</strong>  o view é uma função Python feita para receber uma requisição e enviar uma resposta em retorno. É aqui onde os dados são extraídos e produzem uma resposta.
+                             <p>
+                              <strong>Template:</strong> esta é a camada onde o template da aplicação é produzido através de artefatos compreendidos pelo navegador web. Esta é a parte que diz respeito a tudo que o usuário final é capaz de visualizar em seu dispositivo.
+                             </p>
+                          </p>
+                      </p>
+                      
+                  </p>
+              </p>
+         </p>
+  </p>
+  <hr />
+
+</article>
+{% endblock article %} 
+
+{% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li><a class="text-decoration-none" href="{% url 'pub1' %}">O Programador Web</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub2' %}">As 6 linguagens</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub3' %}">Os novos custo do 5G</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub4' %}">Novo sistema Indiano</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub5' %}">Machine Learning</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub6' %}">O atraso das criptomoedas</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub8' %}">Back-End eFront-End</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub9' %}">Reacte Native</a></li>
+    
+  </ol>
+</div>
+{% endblock div2 %}

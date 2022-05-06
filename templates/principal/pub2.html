@@ -1,0 +1,129 @@
+{% extends "base_pub.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev | 6 linguagens</title>
+{% endblock title %} {% block div1 %}
+<div
+  class="p-4 p-md-5 mb-4 text-black rounded"
+  style="background: url({% static 'img/pub2.png' %})"
+  id="img-capa"
+>
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25">
+      <strong>
+        O texto a seguir fala um pouco sobre as 6 linguagens de programação que
+        favorecem o desenvolvimento de ambientes seguros.
+      </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1%} {% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">
+    As 6 linguagens que favorecem o desenvolvimento seguro
+  </h2>
+  <p class="blog-post-meta">Janeiro 31, 2022 by <a href="#">fernando</a></p>
+  <h3>Javascript</h3>
+  <p style="text-align: justify">
+    Com papel importantíssimo no funcionamento da Internet como conhecemos, o
+    Javascript continuará sendo uma das linguagens mais procuradas e populares
+    do mercado, principalmente pela leveza de processamento de aplicações
+    desenvolvidas com ele e a enorme gama de funções referentes a segurança
+    virtual presentes entre suas capacidades. Além disso, com as contantes
+    melhorias do Node.JS e sua melhor integração ao Javascript, cada vez mais a
+    linguagem está sendo usada tanto para programação de front-end de softwares
+    como também para o back-end, ou seja, o funcionamento interno das
+    aplicações, permitindo assim aos desenvolvedores visualizarem na totalidade
+    como a segurança de programas pode estar funcionando.
+  </p>
+  <h3>C</h3>
+  <p style="text-align: justify">
+    A maioria dos desenvolvedores prefere, em geral, as outras línguas da
+    família C, como C# ou C++, mas acabam tendo que usar a primeira de todas por
+    conta de sua enorme presença nos mais diversos setores de tecnologia do
+    mundo e, nos últimos anos, seu uso em aparelhos de Internet das Coisas. E em
+    termos de segurança, C é a linguagem perfeita para a engenharia reversa de
+    programas, permitindo a desconstrução de softwares para a procura de falhas
+    e vulnerabilidades.
+  </p>
+  <h3>C++</h3>
+  <p style="text-align: justify">
+    C++ é uma das linguagens mais clássicas de programação e até continua sendo
+    uma das mais visadas em diferentes mercados, inclusive os de startups.
+    Graças a sua grande portabilidade e várias opções para reutilização de
+    código, profissionais com experiência nela serão visados por empresas para o
+    desenvolvimento tanto de soluções internas quanto produtos dos mais diversos
+    tipos, inclusive segurança virtual ou firewalls.
+  </p>
+  <h3>Ruby</h3>
+  <p style="text-align: justify">
+    Ruby é a linguagem mais popular do mundo corporativo, mais especificamente
+    nas startups. Conforme a expansão e criação de novos empresas desse tipo
+    ocorrem, maior será a demanda por desenvolvedores que saibam utilizar a
+    Ruby, principalmente em 2022 e o possível (embora ainda distante) cenário
+    positivo de um mundo pós-pandêmico.
+  </p>
+  <h3>Python</h3>
+  <p style="text-align: justify">
+    Fácil para iniciantes e contando com suporte de inúmeras frameworks e
+    bibliotecas de classes e funções, o Python vem crescendo nos últimos anos,
+    graças aos seus usos nas mais diversas aplicações. Além disso, graças as
+    suas diversas bibliotecas, ela é capaz de ser usada para criação de
+    softwares bem específicos, até mesmo focados em segurança.
+  </p>
+  <h3>Assembly</h3>
+  <p style="text-align: justify">
+    Assembly é super necessário em programação, já que traduz as demandas dos
+    softwares para o hardware, porém o grande nível de conhecimento necessário
+    para a construção de programas em suas regras faz com que muitos
+    desenvolvedores não gostem dela. Porém, com o cenário cada vez mais crítico
+    de seguranças digitais, a capacidade da Assembly de analisar e se proteger
+    de vírus é muito importante, o que acaba tornando ela uma competência
+    necessária para profissionais focados nessa parte do setor em específico.
+  </p>
+  <p>Fonte: Analytcs Insight</p>
+  <hr />
+</article>
+{% endblock article %} {% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub1' %}"
+        >O Programador Web</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub3' %}"
+        >Os novos custo do 5G</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub4' %}"
+        >Novo sistema Indiano</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub5' %}"
+        >Machine Learning</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub6' %}"
+        >O atraso das criptomoedas</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a>
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub8' %}"
+        >Back-End eFront-End</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub9' %}">Reacte Native</a>
+    </li>
+    <li><a class="text-decoration-none" href="{% url 'pub10' %}">DJango</a></li>
+  </ol>
+</div>
+{% endblock div2 %}

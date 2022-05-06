@@ -1,0 +1,88 @@
+{% extends "base_pub.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev | React Native </title>
+{% endblock title %} 
+{% block div1 %}
+<div class="p-4 p-md-5 mb-4 mt-4 text-black rounded" style="background: url({% static 'img/pub9.png' %});" id="img-capa">
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25 "><strong>
+      O texto comenta o conceito de uma das ferramentas de desevolvimento mobile mais usadas atualmente.
+    </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1%} 
+
+{% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">Reacte Native</h2>
+  <p class="blog-post-meta">
+    Janeiro 30, 2022 by <a href="#">Alessandro</a>
+  </p>
+
+  <p style="text-align: justify;">
+      O Bootstrap nada mais é que um framework Front End utilizados por milhares de desenvolvedores web pelo mundo.
+       A partir dele, muitas etapas do desenvolvimentos web se tornam mais rápidas e dinâmicas, pois já trazem consigo diversos elementos prontos e estilizados.
+
+      Ele é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS. 
+      Portanto, é uma ferramenta de código fonte aberto para todos. Contudo, hoje em dia, é o framework Front End mais conhecido e mais utilizado pelo mundo. 
+  </p>
+  <h3 style="text-align: justify;">Como surgiu o Bootstrap</h3>
+  <p style="text-align: justify;">
+      O React Native é um framework baseado no já aclamado React, desenvolvido pela equipe do Facebook, que possibilita o desenvolvimento de aplicações mobile,
+       tanto para Android, como para iOS, utilizando apenas Javascript. 
+       <p style="text-align: justify;">
+          Olhando por esse lado, não parece ser nada surpreendente, nem inovador, pois já existem inúmeros frameworks que empacotam aplicações web em uma espécie de “browser”, como o Cordova, ou o Manifold.js, 
+          porém o React Native é diferente, pois todo o código desenvolvido é convertido para a linguagem nativa do sistema operacional.
+
+          <p style="text-align: justify;">
+              <h3 style="text-align: justify;">Vantagens</h3>
+              As principais vantagens de uma aplicação nativa sobre uma aplicação web mobile são:
+              <ul>
+                  <li>Experiência do usuário fluída;</li>
+                  <li>Carregamentos em geral mais rápidos;</li>
+                  <li>Melhor integração entre funções do celular como câmera, giroscópio, etc;</li>
+                  <li>Segurança superior;</li>
+                  <li>Melhor performance em geral</li>
+              </ul>
+              <p style="text-align: justify;">
+                  Antes do surgimento do React Native, desenvolver para Android e iOS era algo relativamente complexo, pois além de ter que aprender as linguagens Objective-C (iOS) e Java (Android), o desenvolvedor não aproveitava praticamente nada do código de uma plataforma para outra,
+                   fazendo assim com que as empresas contratassem um time de desenvolvimento para cada sistema operacional, tornando o projeto muito lento e caro. 
+                  Porém, com o React Native, o código pode ser reaproveitado em até 100% entre as plataformas, podendo fazer com que o custo e a duração do projeto caiam pela metade.
+                  <p style="text-align: justify;">
+                      <h3 style="text-align: justify;">Funcionalidades</h3>
+                      O React Native possui diversas funcionalidades muito interessantes que aumentam a praticidade e a produtividade do desenvolvimento.
+                       Uma delas é o Hot Reloading, que faz com que o programa fique rodando em desenvolvimento, e a cada atualização no código uma versão nova do arquivo modificado é injetado na aplicação, levando menos de 1 segundo para atualizar (mesmo com aplicações grandes e complexas).
+                       Para o desenvolvimento mobile isso é um grande passo, pois em outros frameworks nativos, a cada mudança no código, a aplicação precisava ser recompilada por completo, levando muito mais tempo.
+                       <br><br>
+
+                      Existe também a possibilidade de depurar a aplicação via Google Chrome, como se fosse uma aplicação web padrão, o que ajuda muito os desenvolvedores web que já estão acostumados a utilizar o Dev Tools.
+                       Outra feature interessante do React Native é a possibilidade de combinar seu código Javascript com algum código nativo em Objective-C, Java ou Swift, caso você queira utilizar componentes já prontos, ou otimizar alguns aspectos da sua aplicação.
+                  </p>
+              </p>
+          </p>
+       </p>
+  </p>
+  <hr />
+
+</article>
+{% endblock article %} 
+
+{% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li><a class="text-decoration-none" href="{% url 'pub1' %}">O Programador Web</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub2' %}">As 6 linguagens</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub3' %}">Os novos custo do 5G</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub4' %}">Novo sistema Indiano</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub5' %}">Machine Learning</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub6' %}">O atraso das criptomoedas</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub8' %}">Back-End eFront-End</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub10' %}">DJango</a></li>
+    
+  </ol>
+</div>
+
+{% endblock div2 %}

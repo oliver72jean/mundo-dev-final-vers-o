@@ -1,0 +1,87 @@
+{% extends "base_pub.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev | App Indiano</title>
+{% endblock title %} {% block div1 %}
+<div
+  class="p-4 p-md-5 mb-4 text-black rounded"
+  style="background: url({% static 'img/pub4.jfif' %})"
+  id="img-capa"
+>
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25">
+      <strong>
+        O texto a seguir mostra que mesmo sem Android e iOS! Índia quer
+        desenvolver seu próprio sistema para smartphones
+      </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1%} {% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">Novo sistema Indiano para smartphones</h2>
+  <p class="blog-post-meta">Janeiro 30, 2022 by <a href="#">fernando</a></p>
+  <div>
+    <p style="text-align: justify">
+      O governo indiano está se preparando para lançar um sistema operacional
+      proprietário para substituir Android e iOS em smartphones vendidos no
+      país. O projeto começou a ser gestado no fim do ano passado e foi
+      anunciado com entusiasmo pelo ministro da tecnologia da Índia. De acordo
+      com Rajeev Chandrasekhar, a administração do primeiro-ministro Narendra
+      Modi busca substituir soluções estrangeiras por produtos nacionais como
+      forma de fazer a Índia avançar tecnologicamente.
+    </p>
+    <p>
+      Além disso, o duopólio de Android e iOS é algo que o país quer desafiar.
+      Não existe um terceiro [sistema operacional mobile]. Portanto, em muitos
+      aspectos, há grande interesse do Ministério e do Governo da Índia para
+      criar um novo sistema operacional para telefones celulares. A gente fala
+      com as pessoas. Estamos desenvolvendo políticas para isso.
+    </p>
+  </div>
+
+  <hr />
+</article>
+{% endblock article %} {% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub1' %}"
+        >O Programador Web</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub2' %}"
+        >As 6 linguagens</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub3' %}"
+        >Os novos custo do 5G</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub5' %}"
+        >Machine Learning</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub6' %}"
+        >O atraso das criptomoedas</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a>
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub8' %}"
+        >Back-End eFront-End</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub9' %}">Reacte Native</a>
+    </li>
+    <li><a class="text-decoration-none" href="{% url 'pub10' %}">DJango</a></li>
+  </ol>
+</div>
+{% endblock div2 %}

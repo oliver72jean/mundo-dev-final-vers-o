@@ -1,0 +1,286 @@
+{% extends "base.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev</title>
+{% endblock title %} {%block li %}
+<li class="nav-item"><a href="{% url 'sobre' %}" class="nav-link">Sobre</a></li>
+{% endblock li %} {% block div %}
+<!--carousel-->
+
+<div class="container">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <div class="carousel-inner" style="height: 30em">
+      <div
+        class="carousel-item h-100 active"
+        style="background: url({{questao.cover.url}}) center/contain no-repeat"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>O Programador Web</h5>
+          <a href="pub1" class="btn btn-primary">Ver Publicação</a>
+        </div>
+      </div>
+      <div
+        class="carousel-item h-100"
+        style="background: url({% static 'img/pub7.png' %}) center/contain no-repeat"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>O Bootstrap</h5>
+          <a href="pub7" class="btn btn-primary">Ver Publicação</a>
+        </div>
+      </div>
+      <div
+        class="carousel-item h-100"
+        style="background: url({% static 'img/pub8.png' %}) center/contain no-repeat"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Back-End e Front-End</h5>
+          <a href="pub8" class="btn btn-primary">Ver Publicação</a>
+        </div>
+      </div>
+      <div
+        class="carousel-item h-100"
+        style="background: url({% static 'img/pub10.jpg' %}) center/contain no-repeat"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DJango</h5>
+          <a href="pub10" class="btn btn-primary">Ver Publicação</a>
+        </div>
+      </div>
+      <div
+        class="carousel-item h-100"
+        style="background: url({% static 'img/pub9.png' %}) center/contain no-repeat"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Reacte Native</h5>
+          <a href="pub9" class="btn btn-primary">Ver Publicação</a>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!--Cards-->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub1.jpg' %})"
+          ></div>
+          <h5 class="card-title">O Programador Web</h5>
+          <p class="card-text">
+            O texto a seguir conta um pouco sobre algumas tarefas na qual um
+            desenvolvedor web é responsável, acompanhe a publicação até o final.
+          </p>
+          <a href="{% url 'pub1' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub2.png' %})"
+          ></div>
+          <h5 class="card-title">As 6 linguagens</h5>
+          <p class="card-text">
+            O texto a seguir fala um pouco sobre as 6 linguagens de programação
+            que favorecem o desenvolvimento de ambientes seguros.
+          </p>
+          <a href="{% url 'pub2' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub3.jpeg' %})"
+          ></div>
+          <h5 class="card-title">Os novos custo do 5G</h5>
+          <p class="card-text">
+            Os brasileiros só terão o 5G puro, o chamado standalone, a partir de
+            julho do próximo ano, começando pelas capitais.
+          </p>
+          <a href="{% url 'pub3' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub4.jfif' %})"
+          ></div>
+          <h5 class="card-title">Novo sistema Indiano</h5>
+          <p class="card-text">
+            O texto a seguir mostra que mesmo sem Android e iOS! Índia quer
+            desenvolver seu próprio sistema para smartphones
+          </p>
+          <a href="{% url 'pub4' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub5.jpg' %})"
+          ></div>
+          <h5 class="card-title">Machine Learning</h5>
+          <p class="card-text">
+            O texto a seguir fala um pouco sobre o Machine Learning e busca
+            entender um pouco do que é a tecnologia e como é implementar
+            programas que utilizam esse recurso.
+          </p>
+          <a href="{% url 'pub5' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub6.png' %})"
+          ></div>
+          <h5 class="card-title">O atraso das criptomoedas</h5>
+          <p class="card-text">
+            O texto a seguir fala um pouco sobre o atraso nos pagametos da
+            criptomoeadas que fez com que muitos desses clientes ficassem bem
+            assustados.
+          </p>
+          <a href="{% url 'pub6' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub7.png' %})"
+          ></div>
+          <h5 class="card-title">O Bootstrap</h5>
+          <p class="card-text">
+            O texto a seguir aborda um pouco sobre o conceito do Bootstrap que é
+            uma dos frameworks mais usados na programação web.
+          </p>
+          <a href="{% url 'pub7' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub8.png' %})"
+          ></div>
+          <h5 class="card-title">Back-End eFront-End</h5>
+          <p class="card-text">
+            O texto aborda um pouco sobre o conceito de Front-End e Back-End, e
+            quais a principais diferenças entre eles e as princiapis dúvidas em
+            relação á eles.
+          </p>
+          <a href="{% url 'pub8' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub9.png' %})"
+          ></div>
+          <h5 class="card-title">Reacte Native</h5>
+          <p class="card-text">
+            O texto comenta o conceito de uma das ferramentas de desevolvimento
+            mobile mais usadas atualmente.
+          </p>
+          <a href="{% url 'pub9' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div
+            class="card-img"
+            style="background-image: url({% static 'img/pub10.jpg' %})"
+          ></div>
+          <h5 class="card-title">DJango</h5>
+          <p class="card-text">
+            O que é Django, para que serve e como usar este framework? <br />
+            Essas e outras perguntas serão respondidas dentro desta publicação
+            que está recheada de novidades.
+          </p>
+          <a href="{% url 'pub10' %}" class="btn btn-primary">Leia Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock div %}

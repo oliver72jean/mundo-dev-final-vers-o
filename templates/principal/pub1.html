@@ -1,0 +1,110 @@
+{% extends "base_pub.html" %} {% block title %}
+<title>Mundo Dev | programador Web</title>
+{% endblock title %} {% block div1 %}
+<div
+  class="p-4 p-md-5 mb-4 text-black rounded"
+  style="background: url({{pub1.cover.url}})"
+  id="img-capa"
+>
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25">
+      <strong>
+        O texto a seguir conta um pouco sobre algumas tarefas na qual um
+        desenvolvedor web é responsável, acompanhe a publicação até o final e
+        deixe seu comentário para trazer-mos mais publicações relacionadas ao
+        mundo da programação.
+      </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1 %} {% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">O programador Web</h2>
+  <p class="blog-post-meta">Janeiro 30, 2022 by <a href="#">Alessandro</a></p>
+
+  <p style="text-align: justify">
+    Primeiro, falando sobre o que é ser um desenvolvedor web, ele é responsável
+    por desenvolver sites para a internet, desde simples sites de instituições e
+    empresas, até jogos que rodam totalmente na web. Iniciando na programação
+    web tem-se de início a linguagem de marcação HTML, usada para apresentar
+    textos, parágrafos, imagens, dentre outras coisas.
+  </p>
+  <p style="text-align: justify">
+    Depois de aprender sobre o HTML, percebemos o quanto os nossos projetos web
+    ficam simples, daí surge o CSS, que funciona para dar um estilo mais bonito
+    aos projetos web, sabe aquele site que tem um link com uma cor e quando você
+    passa o mouse para clicar ele fica de outra cor? Ponha a culpa no CSS.
+  </p>
+  <p style="text-align: justify">
+    Depois do CSS, aprendemos um pouco sobre JavaScript e seguimos. Nesse ponto,
+    ou escolhe-se um Framework/Biblioteca para buscar especialização, uma de
+    cada vez, ou tenta abraçar tudo de uma só vez. No segundo caso eu penso que
+    vai ser difícil aprender bem se você tentar aprender tudo de uma vez, mas a
+    escolha é sua.
+  </p>
+  <p style="text-align: justify">
+    Mas, assim como qualquer área em que buscamos nos inserir, sempre pensamos
+    se estamos seguindo o “caminho certo”. De acordo com um artigo do blog
+    Harve: escola de inovação, intitulado “O que faz um desenvolvedor web e como
+    se tornar um em 2021”: “ não importa o que esteja acontecendo no mundo em
+    volta da gente, a tecnologia é onipresente em nossas vidas. Quer seja
+    navegando pelos nossos aplicativos de redes sociais favoritos, olhando as
+    notícias, pagando por algo online, ou conectado com colegas usando
+    ferramentas e softwares de colaboração como Asana […] ”.
+  </p>
+  <p style="text-align: justify">
+    Lendo essa citação podemos perceber de cara o quão importante é um
+    programador web que sabe muito sobre as linguagens usadas na internet e
+    pode, com seu conhecimento e experiência, criar sites para empresas e
+    instituições, codificar jogos na web, dentre muitas outras coisas.
+  </p>
+  <p style="text-align: justify">
+    De acordo com Gabriel Dau, estudante de Análise e Desenvolvimento de
+    Sistemas, em uma publicação de sua autoria para o site Rede Jornal Contábil,
+    “ Pesquisas apontam que até 2024 haverá a criação de 420 mil vagas na área
+    de T.I. […] ”. Deste modo o que podemos perceber é que as áreas de
+    tecnologia, como a programação, por exemplo, podem crescer muito ainda nos
+    próximos anos.
+  </p>
+  <hr />
+</article>
+{% endblock article %} {% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub2' %}"
+        >As 6 linguagens</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub3' %}"
+        >Os novos custo do 5G</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub4' %}"
+        >Novo sistema Indiano</a
+      >
+    </li>
+    <li><a class="text-decoration-none" href="pub5">Machine Learning</a></li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub6' %}"
+        >O atraso das criptomoedas</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a>
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub8' %}"
+        >Back-End eFront-End</a
+      >
+    </li>
+    <li>
+      <a class="text-decoration-none" href="{% url 'pub9' %}">Reacte Native</a>
+    </li>
+    <li><a class="text-decoration-none" href="{% url 'pub10' %}">DJango</a></li>
+  </ol>
+</div>
+{% endblock div2 %}

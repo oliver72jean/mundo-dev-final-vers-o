@@ -1,0 +1,84 @@
+{% extends "base_pub.html" %} {% block title %}
+{%  load static %}
+<title>Mundo Dev | Back-End-Front-End </title>
+{% endblock title %} 
+{% block div1 %}
+<div class="p-4 p-md-5 mb-4 mt-4 text-black rounded" style="background: url({% static 'img/pub8.png' %});" id="img-capa">
+  <div class="col-md-6 px-0">
+    <p class="lead my-3 bg-white p-2 text-dark bg-opacity-25 "><strong>
+      O texto a seguir trata um pouco sobre o conceito de Front-End e Back-End, e quais a principais diferenças entre eles;
+    </strong>
+    </p>
+  </div>
+</div>
+{% endblock div1%} 
+
+{% block article %}
+<article class="blog-post">
+  <h2 class="blog-post-title">O que São Back-End e Front-End e Quais Suas Diferenças</h2>
+  <p class="blog-post-meta">
+    Janeiro 30, 2022 by <a href="#">Alessandro</a>
+  </p>
+
+  <p style="text-align: justify;">
+      A área de desenvolvimento de software e sistemas é bem ampla no mercado tech.
+       São diversas as carreiras que surgem nesse meio, sempre com boas oportunidades em empresas de todos os portes e salários bem atrativos.
+       Esse é o caso dos profissionais Front-End e Back-End.
+       <p style="text-align: justify;">
+          Com tantas opções, vem um questionamento bem importante: como escolher a profissão que mais combina com a sua personalidade e atende às suas expectativas profissionais?
+           É isso que queremos desvendar neste conteúdo, com as diferenças entre as carreiras e outras informações relevantes para uma decisão eficiente.
+       </p>
+       <p style="text-align: justify;">
+           <h3 style="text-align: justify;">Oque é Front-End</h3>
+           Front-End é tudo que envolve a parte visível de um site ou aplicação, com a qual os usuários podem interagir.
+              Essa interface gráfica é desenvolvida a partir de linguagens como JavaScript, HTML e CSS — que são as técnicas de base do desenvolvimento web.
+            O profissional produz códigos para trazem agilidade e responsividade ao produto.
+             Afinal, as pessoas vão acessá-lo de diferentes tamanhos de tela, e ele precisa funcionar bem em todas.
+             <br>
+             <br>
+             Como estamos na era da experiência do usuário, todos os elementos do Front-End devem ser pensados para uma navegação mais simples, fluida e sem complicações.
+              As interações que precisam de um passo a passo para explicar como funcionam já não têm espaço nesse mercado.
+              É por isso que o profissional deve ter noções de design e de usabilidade, pensando pela ótica do cliente final.
+              <p style="text-align: justify;">
+                  <h3>O Que é Back-End</h3>
+                  Já o Back-End fica responsável pelos bastidores de uma aplicação, ou seja, os códigos que permitem a parte visual funcionar corretamente.
+                   É esse profissional que faz a ponte entre o banco de dados e as informações do navegador, de acordo com as regras de negócio em questão.
+                   <br>
+                   <br>
+                   <p style="text-align: justify;">
+                      As linguagens de programação mais utilizadas no Back-End são PHP, Python, C#, Java, Ruby, entre outras.
+                       Elas possibilitam o bom funcionamento dos servidores, a segurança dos dados e, no fim das contas, a experiência do usuário também. 
+                      Afinal, não adianta ter um layout lindo e funcional se o link da página quebra no primeiro clique, concorda?
+                      <p style="text-align: justify;">
+                          <h3 style="text-align: justify;">As principais diferenças entre Front-End e Back-End</h3>
+                          Antes de falarmos, de fato, sobre as diferenças entre Front-End e Back-End, vale lembrar que ainda existe mais um tipo de desenvolvedor comumente associado a esses dois: o Full Stack.
+                           Ele reúne as técnicas e habilidades de ambos os segmentos, oferecendo uma atuação mais estratégica à empresa.
+                           <br><br>
+                           Por isso, é bom conhecer as diferenças, mas tenha em mente que dá para trabalhar com os dois segmentos e alcançar ainda mais sucesso!
+                      </p>
+                   </p>
+              </p>
+       </p>
+  </p>
+  <hr />
+
+</article>
+{% endblock article %} 
+
+{% block div2 %}
+<div class="p-4">
+  <h4 class="fst-italic bg-dark text-white">Veja Também:</h4>
+  <ol class="list-unstyled mb-0">
+    <li><a class="text-decoration-none" href="{% url 'pub1' %}">O Programador Web</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub2' %}">As 6 linguagens</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub3' %}">Os novos custo do 5G</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub4' %}">Novo sistema Indiano</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub5' %}">Machine Learning</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub6' %}">O atraso das criptomoedas</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub7' %}">O Bootstrap</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub9' %}">Reacte Native</a></li>
+    <li><a class="text-decoration-none" href="{% url 'pub10' %}">DJango</a></li>
+    
+  </ol>
+</div>
+{% endblock div2 %}

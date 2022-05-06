@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{%  load static %}
+{% block title %} <title>Mundo Dev | Sobre </title> {% endblock title %}
+{% block div %}
+<div class="container">
+  <section>   
+    <br>
+    <h1 
+    style="width: auto;text-align: center;padding: 10px; background-color: #e1edf2;font-family: 'Times New Roman', Times, serif; color: #3d3d3d"> <b>SOBRE O MUNDO DEV</b></h1>
+    <p style="text-align: justify;">o setor da TI é algo bastante visado como também uma necessidade atual dentro da comunidade, onde contribui para solucionar problemas e elaborar estratégias que facilitam processos e ajudam a gerar mais lucro para uma empresa. 
+      Visando este quesito, criamos o seguinte blog.  O Mundo dev é um site de comunicação, 
+      notícia e informação com o foco na área de tecnologia da informação, personalizado na construção de conteúdos online. Acompanhando o crescimento tecnológico mundial o presente blog foi criado em 2022, com a proposta de trabalhar com a verdade, 
+      seguindo princípios editoriais norteados por valores que definem um bom entretenimento e saciar a busca pela informação. </p>
+      
+  </section>
+  <article>
+    <div class="clearfix">
+      <img src="{% static 'img/logo 2.jpeg' %}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+      <p style="text-align: justify;">
+        <h2 style="width: auto;text-align: center;padding: 10px; background-color: #e1edf2;font-family: 'Times New Roman', Times, serif; color: #3d3d3d;">
+          <b>NOSSOS OBJETIVOS</b>
+        </h2>
+      </p>
+      <p style="text-align: justify;">
+        O referido site tem por objetivo deixar os espectadores antenados no ramo da tecnologia informacional, às emitindo e deixando úteis ao leitor, os motivando à entender melhor sobre determinado tópico, proporcionando informações importantes a esta.
+      </p>
+      <p style="text-align: justify;">
+        <h2 style="width: auto;text-align: center;padding: 10px; background-color: #e1edf2;font-family: 'Times New Roman', Times, serif; color: #3d3d3d;">
+          <b>NOSSOS VALORES</b>
+        </h2>
+      </p>
+      <ul style="text-align: justify;">
+        <li> O Mundo do Dev segue os seguintes valores como a criatividade, paixão, inovação, capacitação, colaboração e integridade.</li>
+        <li>Promover a pluralidade de vozes, interpretações e visões da área da TI. </li>
+        <li>Permitir que os nossos usuários possam acompanhar de forma transparente todas as ações do setor em favor de si mesmo.</li>
+      </ul>
+      <h2 style="width: auto;text-align: center;padding: 10px; background-color: #e1edf2;font-family: 'Times New Roman', Times, serif; color: #3d3d3d;"> <B>OS DESENVOLVEDORES</B></h2>
+      <div class="container">
+        <div class="row">
+          <div class=" col">
+            <h4 style="text-align: center; font-family: 'Times New Roman', Times, serif;"><b>FERNANDO JEAN</b></h4>
+            <div class="container">
+              <div class="row">
+                <img src="{% static 'img/FERNANDO.jpg' %}" class="..." alt="..">
+              </div>
+            </div>
+
+          </div>
+          <div class="col">
+            <h4 style="text-align: center; font-family: 'Times New Roman', Times, serif;"><b>ALESSANDRO NASCIMENTO</b></h4>
+            <p></p>
+            <div class="container">
+              <div class="row">
+                <img src="{% static 'img/ALESSANDRO2.jpeg' %}" class="..." alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+{% endblock div %}
